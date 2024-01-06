@@ -5,18 +5,17 @@ These are my personal notes on implementing gphoto-sync using docker compose.  I
 ## Authenticating your Google Account
 
  1.    Create a new Google Cloud project
-
- 2.   Go to https://console.cloud.google.com/cloud-resource-manager and create a new project.
+> Go to https://console.cloud.google.com/cloud-resource-manager and create a new project.
 
 > For help with this step, see the Google Cloud documentation for creating a project https://cloud.google.com/resource-manager/docs/creating-managing-projects
 
- 3.   Go to https://console.cloud.google.com/apis/library?project=_ select a project, then search for the Photos Library API and enable it for this project.
+ 2.   Go to https://console.cloud.google.com/apis/library?project=_ select a project, then search for the Photos Library API and enable it for this project.
 
 > The Google Cloud help for enabling APIs can be found here: https://cloud.google.com/apis/docs/enable-disable-apis
 
 3.    Go to https://console.cloud.google.com/, make sure the correct project is selected from the top dropdown menu, then click on APIs & Services in the sidebar, and finally click Credentials in the sidebar. Create an Create OAuth client ID. When asked to choose the application type, select "Desktop App".
 
-You can see the complete procedure for setting up OAuth 2.0 with your new project on https://support.google.com/cloud/answer/6158849
+> You can see the complete procedure for setting up OAuth 2.0 with your new project on https://support.google.com/cloud/answer/6158849
 
 4.    Once the client ID is created, download it as client_secret.json (so rename it, as it will have a longer name)
 
