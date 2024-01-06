@@ -38,7 +38,7 @@ services:
     restart: unless-stopped
     volumes:
      - /path/to/config:/config:rw 
-     - /path/to/download:/t
+     - /path/to/download:/storage:rw 
 ```
 
 ## License
@@ -48,4 +48,5 @@ The docker compose file and my documentation are licenced under the MIT license.
 ## References
 - https://www.linuxuprising.com/2019/06/how-to-backup-google-photos-to-your.html
 - https://github.com/gilesknap/gphotos-sync
-- https://hub.docker.com/r/rix1337/docker-gphotos-sync#!
+- https://hub.docker.com/r/rix1337/docker-gphotos-sync
+- https://github.com/perkeep/gphotos-cdp
